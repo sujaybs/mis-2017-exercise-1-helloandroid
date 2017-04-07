@@ -1,16 +1,21 @@
 package com.example.sujaybshalawadi.myapplication;
 
-import android.support.v7.app.AppCompatActivity;
+import android.app.Activity;
 import android.os.Bundle;
-import android.view.View;
+import android.webkit.URLUtil;
 import android.widget.Button;
-import android.widget.TextView;
+import android.widget.EditText;
+import android.widget.LinearLayout;
 
-import static android.R.attr.id;
+import org.xwalk.core.XWalkView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
 
-    Button button;
+    private Button button;
+    private EditText editText;
+
+    // 3rd party web view module
+    private XWalkView xWalkView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,22 +23,23 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         button = (Button) findViewById(R.id.button);
+        editText = (EditText) findViewById(R.id.editText);
 
-        button.setOnClickListener(()->{})
+        // init web view module
+        xWalkView = new XWalkView(this, this);
 
-    // Example of a call to a native method
-    TextView tv = (TextView) findViewById(R.id.sample_text);
-    tv.setText(stringFromJNI());
+        // grab linear layout and add web view to it
+        LinearLayout webViewLayout = (LinearLayout) findViewById(R.id.view);
+        webViewLayout.addView(xWalkView);
+
+        button.setOnClickListener((view) -> loadURL());
     }
 
-    /**
-     * A native method that is implemented by the 'native-lib' native library,
-     * which is packaged with this application.
-     */
-    public native String stringFromJNI();
+    // TODO: handle wrong urls, inform user of errors, handle incomplete urls
 
-    // Used to load the 'native-lib' library on application startup.
-    static {
-        System.loadLibrary("native-lib");
+    private void loadURL() {
+        // perform null checks and the correctness of the URL
+        if (xWalkView != null && editText != null && URLUtil.isNetworkUrl(editText.getText().toString()))
+            xWalkView.load(editText.getText().toString(), null);
     }
 }
