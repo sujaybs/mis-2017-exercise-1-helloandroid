@@ -1,0 +1,3 @@
+/Users/sujaybshalawadi/AndroidStudioProjects/mis-2017-exercise-1-helloandroid/app/.externalNativeBuild/cmake/release/mips64/CMakeFiles/edit_cache.dir
+/Users/sujaybshalawadi/AndroidStudioProjects/mis-2017-exercise-1-helloandroid/app/.externalNativeBuild/cmake/release/mips64/CMakeFiles/rebuild_cache.dir
+/Users/sujaybshalawadi/AndroidStudioProjects/mis-2017-exercise-1-helloandroid/app/.externalNativeBuild/cmake/release/mips64/CMakeFiles/native-lib.dir

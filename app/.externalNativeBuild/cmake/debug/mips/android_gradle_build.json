@@ -1,0 +1,41 @@
+
+{
+	"buildFiles" : 
+	[
+		"/Users/sujaybshalawadi/AndroidStudioProjects/mis-2017-exercise-1-helloandroid/app/CMakeLists.txt"
+	],
+	"cleanCommands" : 
+	[
+		"/Users/sujaybshalawadi/Library/Android/sdk/cmake/3.6.3155560/bin/cmake --build /Users/sujaybshalawadi/AndroidStudioProjects/mis-2017-exercise-1-helloandroid/app/.externalNativeBuild/cmake/debug/mips --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"native-lib-Debug-mips" : 
+		{
+			"abi" : "mips",
+			"artifactName" : "native-lib",
+			"buildCommand" : "/Users/sujaybshalawadi/Library/Android/sdk/cmake/3.6.3155560/bin/cmake --build /Users/sujaybshalawadi/AndroidStudioProjects/mis-2017-exercise-1-helloandroid/app/.externalNativeBuild/cmake/debug/mips --target native-lib",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=mipsel-none-linux-android --gcc-toolchain=/Users/sujaybshalawadi/Library/Android/sdk/ndk-bundle/toolchains/mips64el-linux-android-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/sujaybshalawadi/Library/Android/sdk/ndk-bundle/platforms/android-15/arch-mips  -Dnative_lib_EXPORTS -isystem /Users/sujaybshalawadi/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/sujaybshalawadi/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/mips/include -isystem /Users/sujaybshalawadi/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mips32 -Wa,--noexecstack -Wformat -Werror=format-security  -frtti -fexceptions -O0 -fno-limit-debug-info -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/Users/sujaybshalawadi/AndroidStudioProjects/mis-2017-exercise-1-helloandroid/app/src/main/cpp/native-lib.cpp",
+					"workingDirectory" : "/Users/sujaybshalawadi/AndroidStudioProjects/mis-2017-exercise-1-helloandroid/app/.externalNativeBuild/cmake/debug/mips"
+				}
+			],
+			"output" : "/Users/sujaybshalawadi/AndroidStudioProjects/mis-2017-exercise-1-helloandroid/app/build/intermediates/cmake/debug/obj/mips/libnative-lib.so",
+			"toolchain" : "691356942002163161"
+		}
+	},
+	"toolchains" : 
+	{
+		"691356942002163161" : 
+		{
+			"cCompilerExecutable" : "/Users/sujaybshalawadi/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang",
+			"cppCompilerExecutable" : "/Users/sujaybshalawadi/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++"
+		}
+	}
+}
