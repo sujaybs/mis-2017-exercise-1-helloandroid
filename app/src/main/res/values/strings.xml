@@ -2,4 +2,6 @@
     <string name="app_name">My Application</string>
     <string name="enter_the_url">Enter the URL</string>
     <string name="connect">Connect</string>
+    <string name="err_url">Malformed URL, please check the address</string>
+    <string name="err_net">No network connection available</string>
 </resources>
