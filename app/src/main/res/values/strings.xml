@@ -1,7 +1,13 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">MIS–2017–1</string>
     <string name="enter_the_url">Enter the URL</string>
     <string name="connect">Connect</string>
     <string name="err_url">Malformed URL, please check the address</string>
     <string name="err_net">No network connection available</string>
+    <string name="net_timeout">Network request timed out</string>
+    <string name="net_serv_err">Server responded with error</string>
+    <string name="net_auth_err">Authentication failed</string>
+    <string name="net_err_req">Network error during request</string>
+    <string name="net_par_err">Server\'s response could not be parsed</string>
+    <string name="net_unid_err">Unidentified server error occurred</string>
 </resources>

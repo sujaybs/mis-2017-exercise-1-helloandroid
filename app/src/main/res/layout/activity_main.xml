@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.sujaybshalawadi.myapplication.MainActivity">
+    tools:context="com.example.sujaybshalawadi.mis1.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,6 +19,7 @@
             android:ems="10"
             android:hint="@string/enter_the_url"
             android:inputType="textPersonName"
+            android:imeOptions="actionDone"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="16dp" />
 
