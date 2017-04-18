@@ -112,15 +112,14 @@ public class MainActivity extends Activity {
         volleyRequestQueue.add(
                 new StringRequest(
                         url,
-                        response -> xWalkView.load(
-                                null,
-                                new String(
-                                        response.getBytes()
-                                )
-                        ),
+                        this::handleResponse,
                         this::handleError
                 )
         );
+    }
+
+    private void handleResponse(String response) {
+        xWalkView.load(null, new String(response.getBytes()));
     }
 
     private void handleError(VolleyError error) {
